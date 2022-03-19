@@ -1,0 +1,147 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #242d38;
+  background-color: #242d38;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  color: #efd592;
+  background-color: #242d38;
+  border-bottom: 1px solid #efd592;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 12px;
+  font-weight: 400;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 12px;
+  }
+}
+
+header button span.menuIcon {
+  font-size: 24px;
+  margin: 12px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main #movies.container {
+  max-width: 1000px;
+  margin: 120px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 90px 20px;
+}
+
+main #movies.container .card {
+  position: relative;
+  background-color: #efd592;
+  color: #242d38;
+  max-width: 400px;
+}
+
+main #movies.container .card .movieData {
+  padding: 40px;
+  height: 100%;
+}
+
+main #movies.container .card h2.title {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+main #movies.container .card .index {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  right: 50%;
+  font-size: 24px;
+  color: #efd592;
+  background-color: #242d38;
+  border: 1px solid #efd592;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+main #movies.container .card .sub {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #242d38;
+}
+
+main #movies.container .card .text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+main #movies.container .card button {
+  position: absolute;
+  bottom: -30px;
+  left: 40px;
+  width: calc(100% - 80px);
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #242d38;
+  color: #efd592;
+  border: 1px solid #efd592;
+  font-size: 14px;
+}
+
+main #movies.container .card button:hover {
+  background-color: #efd592;
+  color: #242d38;
+  border-color: #242d38;
+}
+/*# sourceMappingURL=style.css.map */
