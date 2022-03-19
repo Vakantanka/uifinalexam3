@@ -1,8 +1,11 @@
-$primaryColor: #242d38;
-$secondaryColor: #efd592;
+$primaryColor: #eae9e4;
+$secondaryColor: #1c1717;
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: $primaryColor;
     background-color: $primaryColor;
 }
@@ -16,23 +19,16 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
-    color: $secondaryColor;
-    background-color: $primaryColor;
-    border-bottom: 1px solid $secondaryColor;
+    height: 40px;
+    color: $primaryColor;
+    background-color: $secondaryColor;
 
     h1 {
-        font-size: 36px;
+        font-size: 12px;
         margin: 12px;
         font-weight: 400;
         letter-spacing: .2em;
         text-transform: uppercase;
-    }
-
-    @media screen and (max-width: 600px) {
-        h1 {
-            font-size: 12px;
-        }    
     }
 
     button span.menuIcon {
@@ -42,87 +38,89 @@ header {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 0 auto;
 
-    #movies.container {
-        max-width: 1000px;
+    #items.container {
+        max-width: 1280px;
         margin: 120px auto;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 90px 20px;
+        align-items: stretch;
+        gap: 100px 20px;
         
         .card {
             position: relative;
-            background-color: $secondaryColor;
-            color: $primaryColor;
+            width: 400px;
             max-width: 400px;
+            border: 1px solid $secondaryColor;
             
-            .movieData {
+            .cardData {
                 padding: 40px;
-                height: 100%;
-            }
-            
-            h2.title {
-                font-size: 36px;
-                font-weight: 400;
-                // min-height: 100px;
-                // margin-bottom: .5em;
-            }
-            
-            .index {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 40px;
-                height: 40px;
-                top: -20px;
-                right: 50%;
-                font-size: 24px;
                 color: $secondaryColor;
                 background-color: $primaryColor;
-                border: 1px solid $secondaryColor;
-                transform: translateX(50%);
-            }
+                min-height: 200px;
 
-            .sub {
-                font-size: 18px;
-                font-weight: 400;
-                margin-bottom: 1em;
-                padding-bottom: 1em;
-                text-transform: uppercase;
-                border-bottom: 1px solid $primaryColor;
+                h2.title {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+                
+                .sub {
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: .2em;
+                    margin-bottom: .5em;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid $primaryColor;
+                }
+                
             }
             
-            .text {
-                font-size: 18px;
-                font-weight: 400;
-                margin-bottom: 1em;
-            }
-
             button {
                 position: absolute;
-                bottom: -30px;
-                left: 40px;
-                width: calc(100% - 80px);
-                height: 60px;
+                bottom: -40px;
+                left: 0;
+                width: 100%;
+                height: 40px;
                 display: flex;
-                justify-content: center;
+                flex-direction: row;
+                justify-content: flex-start;
                 align-items: center;
                 background-color: $primaryColor;
                 color: $secondaryColor;
-                border: 1px solid $secondaryColor;
-                font-size: 14px;
+                border-bottom: 1px solid $primaryColor;
+
+                .buttonText {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-left: 9px;
+                }
+                .arrow {
+                    position: absolute;
+                    right: 0;
+                    font-size: 18px;
+                    padding-right: 9px;
+                }
             }
 
             button:hover {
-                background-color: $secondaryColor;
-                color: $primaryColor;
-                border-color: $primaryColor;
+                border-bottom: 1px solid $secondaryColor;
             }
+            
+            .text {
+                // position: absolute;
+                color: $primaryColor;
+                background-color: $secondaryColor;
+                font-size: 24px;
+                font-weight: 400;
+                padding: 1rem;
+                text-align: center;
+            }
+            
         }
-
     }
 }
